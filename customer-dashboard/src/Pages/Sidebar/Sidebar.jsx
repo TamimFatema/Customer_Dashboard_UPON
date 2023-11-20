@@ -1,10 +1,11 @@
 // src/Sidebar.js
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <>
-      <div className="bg-blue-200 w-auto h-700px p-4">
+      <div className="bg-white w-auto h-700px p-4">
         {/* User Profile Section */}
         <div className="flex flex-col items-center mb-4">
           <img
@@ -31,7 +32,7 @@ const Sidebar = () => {
               </a>
             </li>
             <li className="my-3">
-              <a href="#" className="flex items-center gap-5 font-semibold hover:text-[#EC5E0E] focus:text-[#EC5E0E]">
+              <a href="" className="flex items-center gap-5 font-semibold hover:text-[#EC5E0E] focus:text-[#EC5E0E]">
                 <span class="material-icons text-[#EC5E0E] ">
                   inventory
                 </span>
