@@ -15,8 +15,8 @@ function App() {
         <Sidebar />
         {/* Add the rest of your content here */}
         {/* <MyProfile /> */}
-        <Order />
-        {/* <Wishlist /> */}
+        {/* <Order /> */}
+        <Wishlist />
         {/* <EditPersonalDetails /> */}
         {/* <Inbox /> */}
       </div>
