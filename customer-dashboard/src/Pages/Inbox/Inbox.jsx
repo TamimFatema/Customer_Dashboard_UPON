@@ -10,9 +10,9 @@ function Inbox() {
                     <span class="material-symbols-outlined">
                         search
                     </span>
-                    <input type='text' placeholder='Search ...' className='w-full' />
+                    <input type='text' placeholder='Search' className='w-full' />
                 </div>
-                <div className='flex justify-between p-1 bg-purple-100 rounded-lg'>
+                <div className='flex justify-between p-1 bg-[#F8F5FF] rounded-lg'>
                     <div className='flex p-2 gap-2 items-center'>
                         <img src={logo} className='border-2 p-1 border-gray-400 rounded-lg' />
                         <span>Admin</span>
@@ -31,11 +31,11 @@ function Inbox() {
                 </div>
                 <div className='flex flex-col p-2'>
                     <div className='flex flex-col gap-1 w-3/4 self-end mb-2'>
-                        <p className='p-2 bg-purple-300 rounded-lg rounded-br-none'>Hello</p>
+                        <p className='p-2 bg-[#E0D3FE] rounded-lg rounded-br-none'>Hello</p>
                         <p className='text-xs'>11:57 AM | Nov 08, 2023</p>
                     </div>
                     <div className='flex flex-col gap-1 w-3/4 mb-2'>
-                        <p className='p-2 bg-gray-300 rounded-lg rounded-bl-none'>Hello</p>
+                        <p className='p-2 bg-[#D9D9D9] rounded-lg rounded-bl-none'>Hello</p>
                         <p className='text-xs'>11:58 AM | Nov 08, 2023</p>
                     </div>
                 </div>

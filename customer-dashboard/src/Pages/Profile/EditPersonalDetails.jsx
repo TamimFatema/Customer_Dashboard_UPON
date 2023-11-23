@@ -7,27 +7,27 @@ function EditPersonalDetails() {
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                 <div className='flex flex-col gap-2'>
                     <p className='font-medium'>First Name</p>
-                    <input type='text' placeholder='Some' className='border-2 rounded-lg p-2 w-full' />
+                    <input type='text' placeholder='Mosraful' className='border-2 rounded-lg p-2 w-full' />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <p className='font-medium'>Last Name</p>
-                    <input type='text' placeholder='One' className='border-2 rounded-lg p-2 w-full' />
+                    <input type='text' placeholder='Habib' className='border-2 rounded-lg p-2 w-full' />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <p className='font-medium'>Phone</p>
-                    <input type='text' className='border-2 rounded-lg p-2 w-full' />
+                    <input type='text' placeholder='01256389564' className='border-2 rounded-lg p-2 w-full' />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <p className='font-medium'>Email</p>
-                    <input type='text' className='border-2 rounded-lg p-2 w-full' />
+                    <input type='text' placeholder='habib@gmail.com' className='border-2 rounded-lg p-2 w-full' />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <p className='font-medium'>New Password</p>
-                    <input type='password' className='border-2 rounded-lg p-2 w-full' />
+                    <input type='password' placeholder='Ex: 6+ characters' className='border-2 rounded-lg p-2 w-full' />
                 </div>
                 <div className='flex flex-col gap-2'>
                     <p className='font-medium'>Confirm password</p>
-                    <input type='text' className='border-2 rounded-lg p-2 w-full' />
+                    <input type='text' placeholder='Ex: 6+ characters' className='border-2 rounded-lg p-2 w-full' />
                 </div>
             </div>
 
@@ -45,8 +45,8 @@ function EditPersonalDetails() {
                     </div>
                 </div>
                 <div className='flex gap-2 h-fit self-end'>
-                    <button className='text-white bg-green-600 px-4 py-2 rounded-lg'>Reset</button>
-                    <button className='text-white bg-purple-700 px-4 py-2 rounded-lg'>Update</button>
+                    <button className='text-white bg-[#0B8D5E] px-4 py-2 rounded-lg'>Reset</button>
+                    <button className='text-white bg-[#5709BB] px-4 py-2 rounded-lg'>Update</button>
                 </div>
             </div>
         </div>

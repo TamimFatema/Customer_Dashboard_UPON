@@ -5,6 +5,7 @@ import EditPersonalDetails from "../Pages/Profile/EditPersonalDetails";
 import Order from "../Pages/Order/Order";
 import Wishlist from "../Pages/Wishlist/Wishlist";
 import Inbox from "../Pages/Inbox/Inbox";
+import AddAddress from "../Pages/Address/AddAddress";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
         element: <MyProfile />,
       },
       {
-        path: "/editprofile",
+        path: "/profile/editprofile",
         element: <EditPersonalDetails />,
       },
       {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/inbox",
         element: <Inbox />,
+      },
+      {
+        path: "/profile/addaddress",
+        element: <AddAddress />,
       },
     ],
   },
