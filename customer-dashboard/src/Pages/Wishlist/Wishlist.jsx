@@ -18,14 +18,17 @@ const Wishlist = () => {
         "https://sdcdn.io/mac/gb/mac_sku_M2LP05_1x1_0.png?width=1440&height=1440",
       amount: 999.99,
     },
+    // Add more items as needed
   ]);
 
   const handleDelete = (id) => {
+    // Filter out the item with the specified id
     const updatedWishlist = wishlist.filter((item) => item.id !== id);
     setWishlist(updatedWishlist);
   };
 
   const handleClearAll = () => {
+    // Clear all items from the wishlist
     setWishlist([]);
   };
 

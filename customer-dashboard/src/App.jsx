@@ -6,6 +6,7 @@ import Order from "./Pages/Order/Order";
 import Wishlist from "./Pages/Wishlist/Wishlist";
 import EditPersonalDetails from "./Pages/Profile/EditPersonalDetails";
 import Inbox from "./Pages/Inbox/Inbox";
+import AddAddress from "./Pages/Address/AddAddress";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
         {/* Add the rest of your content here */}
         {/* <MyProfile /> */}
         {/* <Order /> */}
-        <Wishlist />
+        {/* <Wishlist /> */}
         {/* <EditPersonalDetails /> */}
         {/* <Inbox /> */}
+        <AddAddress />
       </div>
       {/* <Footer /> */}
     </>
