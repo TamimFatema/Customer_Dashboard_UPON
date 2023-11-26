@@ -25,53 +25,53 @@ const Sidebar = () => {
         <nav>
           <ul>
             <li className="my-3">
-              <a
-                href="#"
+              <Link
+                to="/profile"
                 className="flex items-center gap-5 font-semibold hover:text-violet-800 focus:text-violet-800"
               >
                 <span className="material-icons text-violet-700">
                   account_circle
                 </span>
                 My Profile
-              </a>
+              </Link>
             </li>
             <li className="my-3">
-              <a
-                href=""
+              <Link
+                to="/myorders"
                 className="flex items-center gap-5 font-semibold hover:text-[#EC5E0E] focus:text-[#EC5E0E]"
               >
                 <span className="material-icons text-[#EC5E0E] ">
                   inventory
                 </span>
                 Order
-              </a>
+              </Link>
             </li>
             <li className="my-3">
-              <a
-                href="#"
+              <Link
+                to="/mywishlist"
                 className="flex items-center gap-5 font-semibold hover:text-red-600 focus:text-red-600"
               >
                 <span className="material-icons text-red-600">favorite</span>
                 Wishlist
-              </a>
+              </Link>
             </li>
             <li className="my-3">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="flex items-center gap-5 font-semibold hover:text-green-700 focus:text-green-700"
               >
                 <span className="material-icons text-green-700">wallet</span>
                 Wallet
-              </a>
+              </Link>
             </li>
             <li className="my-3">
-              <a
-                href="#"
+              <Link
+                to="inbox"
                 className="flex items-center gap-5 font-semibold hover:text-[#8B087E] focus:text-[#8B087E]"
               >
                 <span className="material-icons text-[#8B087E]">mail</span>
                 Inbox
-              </a>
+              </Link>
             </li>
             <li className="my-3">
               <a
@@ -104,7 +104,7 @@ const Sidebar = () => {
 
         <span
           onClick={() => toggleShowSidebar(true)}
-          className="material-symbols-outlined cursor-pointer bg-purple-600 text-white rounded-md p-1"
+          className="material-symbols-outlined cursor-pointer bg-[#5709BB] text-white rounded-md p-1"
         >
           menu
         </span>
@@ -118,7 +118,8 @@ const Sidebar = () => {
             </span>
             <ul>
               <li className="my-3">
-                <Link to="/profile"
+                <Link
+                  to="/profile"
                   className="flex items-center gap-5 font-semibold hover:text-violet-800 focus:text-violet-800"
                 >
                   <span className="material-icons text-violet-700">
@@ -128,7 +129,8 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className="my-3">
-                <Link to="/myorders"
+                <Link
+                  to="/myorders"
                   className="flex items-center gap-5 font-semibold hover:text-[#EC5E0E] focus:text-[#EC5E0E]"
                 >
                   <span className="material-icons text-[#EC5E0E] ">
@@ -138,7 +140,8 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className="my-3">
-                <Link to="/mywishlist"
+                <Link
+                  to="/mywishlist"
                   className="flex items-center gap-5 font-semibold hover:text-red-600 focus:text-red-600"
                 >
                   <span className="material-icons text-red-600">favorite</span>
@@ -146,7 +149,8 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className="my-3">
-                <Link to="#"
+                <Link
+                  to="#"
                   className="flex items-center gap-5 font-semibold hover:text-green-700 focus:text-green-700"
                 >
                   <span className="material-icons text-green-700">wallet</span>
