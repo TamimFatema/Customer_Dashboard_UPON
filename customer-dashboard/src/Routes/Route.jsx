@@ -6,6 +6,10 @@ import Order from "../Pages/Order/Order";
 import Wishlist from "../Pages/Wishlist/Wishlist";
 import Inbox from "../Pages/Inbox/Inbox";
 import AddAddress from "../Pages/Address/AddAddress";
+import Notification from "../Pages/Notification/Notification";
+import PendingOrders from "../Pages/Order/PendingOrders";
+import CompletedOrders from "../Pages/Order/CompletedOrders";
+import EditAddress from "../Pages/Address/EditAddress";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +39,22 @@ export const router = createBrowserRouter([
       {
         path: "/profile/addaddress",
         element: <AddAddress />,
+      },
+      {
+        path: "/notification",
+        element: <Notification />,
+      },
+      {
+        path: "/pendingorders",
+        element: <PendingOrders />,
+      },
+      {
+        path: "/completedorders",
+        element: <CompletedOrders />,
+      },
+      {
+        path: "/profile/editaddress",
+        element: <EditAddress />,
       },
     ],
   },

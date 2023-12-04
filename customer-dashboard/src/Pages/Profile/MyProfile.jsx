@@ -6,24 +6,28 @@ function MyProfile() {
     <div className="flex flex-col mx-auto lg:mx-0 gap-4 w-full md:w-[750px]">
       <div className="flex flex-col gap-4 bg-white p-8 rounded-lg  shadow-md shadow-purple-300/100">
         <div className="flex flex-col sm:flex-row gap-4 font-medium">
-          <div className="flex flex-col flex-grow items-center p-2 lg:p-3 gap-2 rounded-lg shadow-md border border-amber-300 shadow-amber-200/75">
-            <p className="text-xl font-semibold">1</p>
-            <div className="flex items-center gap-3 text-lg font-semibold">
-              <span className="material-symbols-outlined text-amber-400">
-                deployed_code_history
-              </span>
-              Pending Orders
+          <Link to="/pendingorders">
+            <div className="flex flex-col flex-grow items-center p-2 lg:p-3 gap-2 rounded-lg shadow-md border border-amber-300 shadow-amber-200/75">
+              <p className="text-xl font-semibold">1</p>
+              <div className="flex items-center gap-3 text-lg font-semibold">
+                <span className="material-symbols-outlined text-amber-400">
+                  deployed_code_history
+                </span>
+                Pending Orders
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col flex-grow items-center p-2 lg:p-3 gap-2 rounded-lg shadow-md border border-green-400 shadow-green-300/95">
-            <p className="text-xl font-semibold">1</p>
-            <div className="flex items-center gap-3 text-lg font-semibold">
-              <span className="material-symbols-outlined text-green-400">
-                select_check_box
-              </span>
-              Completed Orders
+          </Link>
+          <Link to="/completedorders">
+            <div className="flex flex-col flex-grow items-center p-2 lg:p-3 gap-2 rounded-lg shadow-md border border-green-400 shadow-green-300/95">
+              <p className="text-xl font-semibold">1</p>
+              <div className="flex items-center gap-3 text-lg font-semibold">
+                <span className="material-symbols-outlined text-green-400">
+                  select_check_box
+                </span>
+                Completed Orders
+              </div>
             </div>
-          </div>
+          </Link>
           <div className="flex flex-col flex-grow items-center p-2 lg:p-3 gap-2 rounded-lg shadow-md border border-red-300 shadow-red-200/100">
             <p className="text-xl font-semibold">10</p>
             <div className="flex items-center gap-3 text-lg font-semibold">
@@ -75,9 +79,12 @@ function MyProfile() {
           <div className="flex items-center justify-between bg-[#E0D3FE80] p-2 rounded-t-lg">
             <span className="font-semibold">Home (Shipping Address)</span>
             <div className="flex gap-2">
-              <span className="text-[#134EA3] material-symbols-outlined">
-                edit_location
-              </span>
+              <Link to="/profile/editaddress">
+                <span className="text-[#134EA3] material-symbols-outlined">
+                  edit_location
+                </span>
+              </Link>
+
               <span className="text-red-500 material-symbols-outlined">
                 delete
               </span>
