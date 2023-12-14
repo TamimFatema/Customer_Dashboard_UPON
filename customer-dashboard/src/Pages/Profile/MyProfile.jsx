@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function MyProfile() {
+  const [isAddressDeleted, setIsAddressDeleted] = useState(false);
+
+  const handleDeleteAddress = () => {
+   
+    console.log("Address deleted!");
+    setIsAddressDeleted(true);
+  };
+
   return (
     <div className="flex flex-col mx-auto lg:mx-0 gap-4 w-full md:w-[750px]">
       <div className="flex flex-col gap-4 bg-white p-8 rounded-lg  shadow-md shadow-purple-300/100">
@@ -75,27 +83,36 @@ function MyProfile() {
             <span className="material-icons text-lg">fmd_good</span>
           </Link>
         </div>
-        <div className="mt-2 border-2 rounded-lg shadow-md w-full sm:w-1/2">
-          <div className="flex items-center justify-between bg-[#E0D3FE80] p-2 rounded-t-lg">
-            <span className="font-semibold">Home (Shipping Address)</span>
-            <div className="flex gap-2">
-              <Link to="/profile/editaddress">
-                <span className="text-[#134EA3] material-symbols-outlined">
-                  edit_location
-                </span>
-              </Link>
 
-              <span className="text-red-500 material-symbols-outlined">
-                delete
-              </span>
+        {/* Conditionally render the address based on the delete state */}
+        {!isAddressDeleted && (
+          <div className="mt-2 border-2 rounded-lg shadow-md w-full sm:w-1/2">
+            <div className="flex items-center justify-between bg-[#E0D3FE80] p-2 rounded-t-lg">
+              <span className="font-semibold">Home (Shipping Address)</span>
+              <div className="flex gap-2">
+                <Link to="/profile/editaddress">
+                  <span className="text-[#134EA3] material-symbols-outlined">
+                    edit_location
+                  </span>
+                </Link>
+
+                <a href="#">
+                  <span
+                    className="text-red-500 material-symbols-outlined"
+                    onClick={handleDeleteAddress}
+                  >
+                    delete
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div className="p-2">
+              <p>Office: 6, Level:6,</p>
+              <p>Rupayan Trade Center,</p>
+              <p>Bangla Motor, Dhaka</p>
             </div>
           </div>
-          <div className="p-2">
-            <p>Office: 6, Level:6,</p>
-            <p>Rupayan Trade Center,</p>
-            <p>Bangla Motor, Dhaka</p>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
